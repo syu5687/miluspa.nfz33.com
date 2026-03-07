@@ -25,41 +25,82 @@
 
 <!-- 構造化データ (JSON-LD) -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  "name": "Milu Spa",
-  "description": "佐賀県小城市牛津町のドライヘッドスパ専門店。完全予約制プライベートサロン。",
-  "url": "https://miluspa.nfz33.com/",
-  "telephone": "080-2729-6941",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "牛津町柿樋瀬463-3",
-    "addressLocality": "小城市",
-    "addressRegion": "佐賀県",
-    "postalCode": "845-0001",
-    "addressCountry": "JP"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Milu Spa（ミルスパ）",
+    "alternateName": ["ミルスパ", "MiluSpa", "Milu Spa 小城", "佐賀ドライヘッドスパ"],
+    "description": "佐賀県小城市牛津町にある、ドライヘッドスパ専門のプライベートサロン。髪を濡らさず・着替え不要で頭皮をもみほぐし、眼精疲労・頭痛・睡眠改善・アンチエイジングに効果的。完全予約制で周りを気にせずリラックスできる空間。",
+    "url": "https://miluspa.nfz33.com/",
+    "telephone": "080-2729-6941",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "牛津町柿樋瀬463-3",
+      "addressLocality": "小城市",
+      "addressRegion": "佐賀県",
+      "postalCode": "845-0001",
+      "addressCountry": "JP"
+    },
+    "geo": {"@type": "GeoCoordinates", "latitude": 33.310, "longitude": 130.184},
+    "openingHours": "Mo-Su",
+    "priceRange": "¥1,500〜¥5,000",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "駐車場", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "完全予約制", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "プライベートルーム", "value": true}
+    ],
+    "serviceType": ["ドライヘッドスパ", "ヘッドスパ", "ヘッドマッサージ", "頭皮ケア"],
+    "areaServed": [
+      {"@type": "City", "name": "佐賀市"},
+      {"@type": "City", "name": "小城市"},
+      {"@type": "City", "name": "多久市"},
+      {"@type": "City", "name": "武雄市"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ドライヘッドスパメニュー",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "クイックコース30分"}, "price": "2500", "priceCurrency": "JPY"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "スタンダードコース45分"}, "price": "3500", "priceCurrency": "JPY"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "プレミアムコース60分"}, "price": "4500", "priceCurrency": "JPY"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "キッズヘッドケア20分"}, "price": "1500", "priceCurrency": "JPY"}
+      ]
+    },
+    "sameAs": ["https://lin.ee/q0Mv2Do"]
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 33.310,
-    "longitude": 130.184
-  },
-  "openingHours": "Mo-Su",
-  "priceRange": "¥1,500〜¥5,000",
-  "servesCuisine": "ドライヘッドスパ",
-  "serviceType": ["ドライヘッドスパ", "ヘッドスパ", "ヘッドマッサージ", "頭皮ケア"],
-  "areaServed": [
-    {"@type": "City", "name": "佐賀市"},
-    {"@type": "City", "name": "小城市"},
-    {"@type": "Town", "name": "牛津町"}
-  ],
-  "keywords": "佐賀 ヘッドスパ, 小城 ヘッドスパ, 牛津 ヘッドスパ, ドライヘッドスパ 佐賀",
-  "hasMap": "https://maps.app.goo.gl/GnfLNG47Qi7NtXeq5",
-  "sameAs": [
-    "https://lin.ee/q0Mv2Do"
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "佐賀でドライヘッドスパができるサロンはどこですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "佐賀県小城市牛津町にある「Milu Spa（ミルスパ）」がドライヘッドスパ専門店です。国道34号線沿い・グッデイ牛津店近くにあり、駐車場完備で佐賀市内からもアクセスしやすい立地です。電話番号は080-2729-6941、LINEでも24時間予約受付中です。"}
+      },
+      {
+        "@type": "Question",
+        "name": "ドライヘッドスパとは何ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "ドライヘッドスパとは、水やオイルを使わずに頭皮・頭部をマッサージするリラクゼーション施術です。髪を濡らさないため着替えが不要で、仕事帰りやショッピングのついでに気軽に受けられます。眼精疲労の緩和、頭痛の改善、睡眠の質向上、顔のリフトアップ・アンチエイジングなどの効果が期待できます。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Milu Spaの料金はいくらですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "グランドオープン記念価格は、30分コース2,500円、45分コース3,500円、60分コース4,500円、キッズヘッドケア（20分・7歳以上）1,500円です。"}
+      },
+      {
+        "@type": "Question",
+        "name": "予約なしで行けますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Milu Spaは完全予約制です。公式LINE（https://lin.ee/q0Mv2Do）またはお電話（080-2729-6941）にてご予約ください。LINEは24時間受付しています。"}
+      },
+      {
+        "@type": "Question",
+        "name": "頭痛や眼精疲労にヘッドスパは効果がありますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "ドライヘッドスパは頭皮の血流を改善するため、緊張性頭痛の緩和や眼精疲労の回復に効果的です。Milu Spaでは頭の重だるさ・目の疲れ・首肩のこり・睡眠の質改善・顔のリフトアップなどの効果が期待できます。"}
+      }
+    ]
+  }
+]
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -360,6 +401,44 @@
           駐車場完備でお気軽にお越しいただけます。
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-en">FAQ</span>
+      <h2 class="section-ja">よくあるご質問</h2>
+    </div>
+    <div class="faq-list fade-in">
+
+      <details class="faq-item">
+        <summary class="faq-q">ドライヘッドスパとはどんな施術ですか？</summary>
+        <p class="faq-a">水やオイルを一切使用しない頭部マッサージです。髪も服も濡れないので、仕事帰りやお買い物のついでにそのままお立ち寄りいただけます。着替えも不要で、施術後はそのままお出かけいただけます。</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">どんな悩みに効果がありますか？</summary>
+        <p class="faq-a">頭の重だるさ・眼精疲労・慢性的な頭痛・首や肩のこり・睡眠の質低下・顔のたるみ・アンチエイジングなど、幅広いお悩みに対応しています。頭皮の血流を改善することで、これらの症状の緩和が期待できます。</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">予約なしで当日行けますか？</summary>
+        <p class="faq-a">当サロンは完全予約制のプライベートサロンです。事前のご予約をお願いしています。公式LINE または お電話にて承りますので、お気軽にご連絡ください。LINEは24時間受付可能です。</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">子どもも受けられますか？</summary>
+        <p class="faq-a">はい、7歳以上のお子様を対象とした「キッズヘッドケア（20分）」をご用意しています。グランドオープン記念価格は1,500円（通常2,000円）です。</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">駐車場はありますか？</summary>
+        <p class="faq-a">はい、駐車場を完備しています。国道34号線沿い・グッデイ牛津店近くですので、お車でのアクセスも便利です。佐賀市内・多久・武雄方面からもご利用いただけます。</p>
+      </details>
+
     </div>
   </div>
 </section>
